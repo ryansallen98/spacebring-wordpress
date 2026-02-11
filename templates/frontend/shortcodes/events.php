@@ -31,7 +31,7 @@ if (!defined('ABSPATH')) {
 
     <?php else: ?>
 
-        <div class="hidden md:flex md:visible md:static gap-2 mb-6 bg-gray-100 rounded-md p-2 w-fit text-sm" role="tablist">
+        <div class="hidden md:flex md:visible md:static gap-2 mb-6 bg-gray-100 rounded-md p-2 w-fit text-sm mx-auto" role="tablist">
             <button type="button" data-view="list" data-active="true"
                 class="spacebring-tab data-[active=true]:bg-gray-200 px-4 py-2 rounded hover:bg-gray-200/50 focus-visible:bg-gray-200/50 cursor-pointer">
                 <?php esc_html_e('List View', 'spacebring'); ?>
@@ -42,7 +42,7 @@ if (!defined('ABSPATH')) {
             </button>
         </div>
 
-        <div class="spacebring-view spacebring-view-list">
+        <div class="spacebring-view spacebring-view-list mx-auto max-w-2xl">
             <ul class="flex flex-col list-none p-0 m-0 gap-8 lg:gap-16">
                 <?php foreach ($events as $event): ?>
                     <li class="m-0 p-0 border-b border-dashed border-gray-300 pb-8 lg:pb-16 last:border-0">
