@@ -4,13 +4,13 @@ use RSA\Spacebring\Plugin;
 
 /**
  * Plugin Name: Spacebring
- * Plugin URI: https://github.com/ryansallen98/spacebring-wp-plugin
+ * Plugin URI: https://github.com/ryansallen98/spacebring-wordpress
  * Description: A WordPress plugin for Spacebring API integration
- * Version: 1.0.0
+ * Version: 1.1.0
  * Author: Ryan Allen
  * Author URI: https://github.com/ryansallen98
- * License: GPL v2 or later
- * License URI: https://www.gnu.org/licenses/gpl-2.0.html
+ * License: MIT
+ * License URI: https://opensource.org/licenses/MIT
  * Text Domain: spacebring
  */
 
