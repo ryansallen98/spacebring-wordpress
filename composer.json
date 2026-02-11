@@ -5,7 +5,7 @@
   "autoload": {
     "psr-4": {
       "RSA\\Spacebring\\": "src/",
-      "RSA\\Spacebring\\Templates": "templates/",
+      "RSA\\Spacebring\\Templates\\": "templates/",
       "RSA\\Spacebring\\Tests\\": "tests/"
     }
   },
@@ -17,6 +17,7 @@
   ],
   "minimum-stability": "alpha",
   "require": {
-    "php": ">=7.4"
+    "php": ">=7.4",
+    "league/commonmark": "^2.8"
   }
 }
