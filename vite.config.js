@@ -22,6 +22,7 @@ export default () => {
         input: {
             tailwind: path.resolve(stylesDir, "tailwind.css"),
             admin: path.resolve(scriptsDir, "admin.ts"),
+            events: path.resolve(scriptsDir, "frontend/events.ts"),
         },
         output: {
           entryFileNames: "js/[name].js",
