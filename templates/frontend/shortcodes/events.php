@@ -19,6 +19,7 @@ if (!defined('ABSPATH')) {
 }
 
 ?>
+<div class="bg-red-500 w-full h-200"></div>
 
 <div class="rsa-spacebring-wrap" data-template-version="<?php echo esc_attr($template_version); ?>">
 
@@ -30,14 +31,14 @@ if (!defined('ABSPATH')) {
 
     <?php else: ?>
 
-        <div class="flex gap-2 mb-6 bg-gray-100 rounded-md p-2 w-fit text-sm" role="tablist">
+        <div class="hidden md:flex md:visible md:static gap-2 mb-6 bg-gray-100 rounded-md p-2 w-fit text-sm" role="tablist">
             <button type="button" data-view="list" data-active="true"
                 class="spacebring-tab data-[active=true]:bg-gray-200 px-4 py-2 rounded hover:bg-gray-200/50 focus-visible:bg-gray-200/50 cursor-pointer">
-                List View
+                <?php esc_html_e('List View', 'spacebring'); ?>
             </button>
             <button type="button" data-view="calendar" data-active="false"
                 class="spacebring-tab data-[active=true]:bg-gray-200 px-4 py-2 rounded hover:bg-gray-200/50 focus-visible:bg-gray-200/50 cursor-pointer">
-                Calendar View
+                <?php esc_html_e('Calendar View', 'spacebring'); ?>
             </button>
         </div>
 
@@ -73,7 +74,7 @@ if (!defined('ABSPATH')) {
 
                         <a href="<?php echo esc_url($domain . $event['locationRef'] . "/events/" . $event['id']); ?>"
                             target="_blank" class="button inline-block">
-                            View Event
+                            <?php esc_html_e('View Event', 'spacebring'); ?>
                         </a>
                     </li>
                 <?php endforeach; ?>
