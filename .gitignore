@@ -1,0 +1,39 @@
+# WordPress
+.DS_Store
+*.log
+npm-debug.log*
+
+# Dependencies
+/node_modules/
+/vendor/
+
+# Build files
+/dist/
+/build/
+/assets/build
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# OS
+Thumbs.db
+
+# Composer
+composer.lock
+
+# Environment
+.env
+.env.local
+
+# Testing
+/tests/coverage/
+phpunit.xml
+
+# Temporary files
+*.tmp
+*.bak
+*.cache
