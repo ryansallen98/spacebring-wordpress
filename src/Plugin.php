@@ -5,6 +5,7 @@ namespace RSA\Spacebring;
 use RSA\Spacebring\Admin\Admin;
 use RSA\Spacebring\Ajax\Ajax;
 use RSA\Spacebring\PostTypes\PostTypes;
+use RSA\Spacebring\Services\Services;
 
 
 class Plugin
@@ -14,5 +15,6 @@ class Plugin
         (new Admin())->init();
         (new Ajax())->init();
         (new PostTypes())->init();
+        (new Services())->init();
     }
 }
