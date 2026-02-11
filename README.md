@@ -49,3 +49,53 @@ spacebring/
 - PHP 8.0+
 - Node.js 18+ (for frontend build)
 - Composer
+
+## 🛠️ Development Setup
+
+1. **Install PHP dependencies**
+
+```bash
+composer install
+```
+
+2. **Install frontend dependencies**
+
+```bash
+npm install
+```
+
+3. **Install frontend dependencies**
+
+```bash
+npm run dev
+# or
+npm run build
+```
+
+4. **Activate the plugin**
+
+- Zip the plugin folder or symlink it into your WordPress wp-content/plugins directory.
+- Activate Spacebring for WordPress from the WP admin panel.
+
+## 🧪 Current Status
+
+Implemented:
+- ✅ WordPress plugin bootstrapping
+- ✅ Modular service architecture
+- ✅ Modern frontend build system (Vite + Tailwind + TS)
+- ✅ Basic CPT syncing with spacebring API
+
+Not yet implemented:
+- ❌ Webhooks / scheduled sync
+- ❌ Frontend rendering of Spacebring data
+- ❌ Cached Sync + Live Fetch for events and feed
+
+## 🤝 Contributing
+
+This project is in early development. Contributions and ideas are welcome.
+If you’re extending this plugin, consider keeping the modular service structure intact.
+
+
+## 📄 License
+
+MIT
