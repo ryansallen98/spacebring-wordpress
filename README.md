@@ -64,7 +64,7 @@ composer install
 npm install
 ```
 
-3. **Install frontend dependencies**
+3. **Build frontend assets**
 
 ```bash
 npm run dev
@@ -84,11 +84,63 @@ Implemented:
 - ✅ Modular service architecture
 - ✅ Modern frontend build system (Vite + Tailwind + TS)
 - ✅ Basic CPT syncing with spacebring API
+- ✅ Basic Cached Sync + Live Fetch for events
+- ✅ Template overriding for frontend
 
 Not yet implemented:
 - ❌ Webhooks / scheduled sync
-- ❌ Frontend rendering of Spacebring data
-- ❌ Cached Sync + Live Fetch for events and feed
+- ❌ Cached Sync + Live Fetch for feeds
+- ❌ Support for multiple locations
+- ❌ Template version control in settings
+
+## Shortcodes
+
+### Events
+
+Use the [spacebring_events] shortcode to display upcoming Spacebring events anywhere on your site (posts, pages, or templates).
+
+```
+[spacebring_events]
+```
+
+#### Shortcode Attributes
+
+You can customize the shortcode using the following attributes:
+
+##### limit (number)
+Controls how many upcoming events to display.
+
+```
+[spacebring_events]
+```
+Default: 5
+
+##### assets (boolean)
+Controls whether the plugin loads its JavaScript and CSS assets (Tailwind, calendar, view toggle, etc.).
+
+```
+[spacebring_events assets="true"]
+```
+Disable assets if you are manually enqueueing them elsewhere:
+```
+[spacebring_events assets="false"]
+```
+Default: true
+
+## Template Override (Advanced)
+You can override the default markup by copying the template into your theme:
+
+```
+your-theme/spacebring/shortcodes/events.php
+```
+
+This allows you to fully customize the layout and styling of the events list and calendar views.
+
+### Notes
+- Events are cached for performance and refreshed automatically.
+- Dates are displayed using your WordPress site’s date format.
+- Clicking an event opens the full Spacebring event page in a new tab.
+
 
 ## 🤝 Contributing
 
